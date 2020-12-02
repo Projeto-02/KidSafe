@@ -65,7 +65,7 @@ class Formulario:
                 manipulador.close()
 
         def pergunta_1(self):
-                print("Você tem mais de um filho(a) menor de 12 anos em casa?\n>\n")
+                print("Você tem mais de um filho(a) com menos 12 anos em casa?\n>\n")
                 opcao = input("")
                 opcao = opcao.upper()
                 if opcao == "SIM":
@@ -74,12 +74,12 @@ class Formulario:
                         self.peso1 = 1
 
         def pergunta_2(self):
-                print("\nNormalmente seu filho(a) utilize o fogão sozinho?\n< >\n")
+                print("\nNormalmente seu filho(a) utilize o fogão sozinho(a)?\n< >\n")
                 opcao = input("")
                 opcao = opcao.upper()
                 if opcao == "SIM":
                         if self.peso1 == 0:
-                                self.peso2 = 16
+                                self.peso2 = 17
                         elif self.peso1 == 1:
                                 self.peso2 = 18
                         self.dica2 = "-Não deixo-o(a) utilizar o fogão\n"
@@ -102,12 +102,12 @@ class Formulario:
                         self.dica3 = ""
 
         def pergunta_4(self):
-                print("\nSeu filho(a) normalmente mexe em eletricidade?\n< >\n")
+                print("\nSeu filho(a) tem fácil acesso a tomadas e a objetos elétricos\n< >\n")
                 opcao = input("")
                 opcao = opcao.upper()
                 if opcao == "SIM":
                         if self.peso1 == 0:
-                                self.peso4 = 16 
+                                self.peso4 = 17 
                         elif self.peso1 == 1:
                                 self.peso4 = 18
                         self.dica4 = "-Não permita que seu filho/a mexa em eletricidade\n"
@@ -116,7 +116,7 @@ class Formulario:
                         self.dica4 = ""
 
         def pergunta_5(self):
-                print("\nVocê costuma avisar ao seu filho sobre os locais que estão molhados dentro de casa?\n< >\n")
+                print("\nVocê costuma avisar ao seu filho sobre locais que estão molhados em casa?\n< >\n")
                 opcao = input("")
                 opcao = opcao.upper()
                 if opcao == "SIM":
@@ -130,15 +130,15 @@ class Formulario:
                         self.dica5 = "-Sempre avise o seu filho(a) que o piso está molhado\n"
 
         def pergunta_6(self):
-                print("\nVocê permite que seu filho(a) utilize faca? \n< >\n")
+                print("\nVocê permite que seu filho(a) utilize facas sozinho(a)? \n< >\n")
                 opcao = input("")
                 opcao = opcao.upper()
                 if opcao == "SIM":
                         if self.peso1 == 0:
-                                self.peso6 = 21
+                                self.peso6 = 19
                         elif self.peso1 == 1:
                                 self.peso6 = 19
-                        self.dica6 = "-Não permita que seu filho(a) utilize faca\n"
+                        self.dica6 = "-Se mantenha presente quando seu filho(a) for utilizar objetos cortantes para auxiliar-lo(a)\n"
                 elif opcao == "NÃO":
                         self.peso6 = 0
                         self.dica6 = ""
